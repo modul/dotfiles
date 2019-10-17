@@ -6,9 +6,11 @@
 - clean: ['~']
 
 - link:
-    ~/.config:
+    ~/.config/plasma-workspace/env/set_window_manager.sh:
+    ~/.config/fish/config.fish:
+    ~/.config/fish/functions:
     ~/.ghci:
     ~/.gitconfig:
-    ~/.stack:
+    ~/.stack/config.yaml:
     ~/.vimrc:
-    ~/.xmonad:
+    ~/.xmonad/xmonad.hs:
