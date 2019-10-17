@@ -1,0 +1,25 @@
+[user]
+	name = Remo Giermann
+	email = mo@liberejo.de
+	signingkey = 5DF21101
+[alias]
+	lg = log --graph \
+		--pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' \
+		--abbrev-commit --date=relative --date-order
+	cv = "!git describe --abbrev=4 HEAD 2>/dev/null > version ; git commit $@ "
+	cm = commit
+	st = status -s
+	ch = checkout
+	mm = merge --no-ff --log
+    sdiff = diff --cached
+	wdiff = diff --word-diff
+	week = log --date=short --format='%ad %s' --since='1 week ago'
+	day = log --date=short --format='%ad %s' --since='1 day ago'
+[color]
+    ui = auto
+[core]
+    whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+    pager = less -FXRS
+	excludesfile = /home/mo/.gitignore
+[push]
+	default = simple
