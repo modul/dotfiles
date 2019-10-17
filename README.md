@@ -20,5 +20,11 @@ and cd dotfiles
 and ./install
 ```
 
+## Testing
+
+I set up a simple CI pipeline to test the installation process and warn me
+about a broken dotbot configuration (missing files, typos). If the pipeline
+passes (see above) everything seems to be working.
+
 
 [pipeline]: https://gitlab.com/modulification/dotfiles/badges/master/pipeline.svg
