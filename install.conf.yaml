@@ -1,0 +1,14 @@
+- defaults:
+    link:
+        relink: true
+        create: true
+
+- clean: ['~']
+
+- link:
+    ~/.config:
+    ~/.ghci:
+    ~/.gitconfig:
+    ~/.stack:
+    ~/.vimrc:
+    ~/.xmonad:
