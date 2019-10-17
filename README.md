@@ -1,4 +1,5 @@
 # Dotfiles
+[![test status][pipeline]](https://gitlab.com/modulification/dotfiles)
 
 These are my personal configuration files.
 
@@ -18,3 +19,6 @@ git clone https://github.com/modul/dotfiles
 and cd dotfiles
 and ./install
 ```
+
+
+[pipeline]: https://gitlab.com/modulification/dotfiles/badges/master/pipeline.svg
