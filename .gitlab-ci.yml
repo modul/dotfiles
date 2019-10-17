@@ -3,6 +3,6 @@ image: alpine:latest
 test:
     script: 
         - apk update
-        - apk add git python3 tree
+        - apk add git python3 tree bash
         - ./install
 
