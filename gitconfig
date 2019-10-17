@@ -1,7 +1,5 @@
-[user]
-	name = Remo Giermann
-	email = mo@liberejo.de
-	signingkey = 5DF21101
+[include]
+    path = .gituser
 [alias]
 	lg = log --graph \
 		--pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' \
