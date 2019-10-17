@@ -1,18 +1,21 @@
 # Dotfiles
 [![test status][pipeline]](https://gitlab.com/modulification/dotfiles)
 
-These are my personal configuration files.
+These are my personal configuration files. 
+
+I'm using [dotbot](https://github.com/anishathalye/dotbot) to install dotfiles
+because it provides the added functionality of removing dead links, creating
+directories or running arbitrary scripts additionally to linking my dotfiles.
 
 ## Installation
 
-I'm using [dotbot](https://github.com/anishathalye/dotbot) to install dotfiles. That 
-makes the process as simple as:
+Using bash:
 
 ```sh
 git clone https://github.com/modul/dotfiles && cd dotfiles && ./install
 ```
 
-or in fish:
+Using fish:
 
 ```sh
 git clone https://github.com/modul/dotfiles
