@@ -12,6 +12,7 @@
     ~/.ghci:
     ~/.gitconfig:
     ~/.gituser:
+    ~/.screenrc:
     ~/.stack/config.yaml: stack.yaml
     ~/.vimrc:
     ~/.xmonad/xmonad.hs: xmonad.hs
