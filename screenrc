@@ -1,1 +1,22 @@
-term "screen-256color"
+defutf8 on
+utf8 on on
+term screen-256color
+
+# window caption and status line
+hardstatus alwayslastline "%{ck} %n%f %t %{w}| %?%-Lw%?%{m}%n*%f %t%?(%u)%?%{w}%?%+Lw%? %{+d w}%=(%l) %-21=%{wk}%D %d.%m.%Y %0c"
+
+# no annoying audible bell, please
+vbell on
+vbell_msg " *beep* "
+# activity "activity in %n (%t) [%w:%s]~"
+
+# detach on hangup
+autodetach on
+
+# don't display the copyright page
+startup_message off
+
+# emulate .logout message
+pow_detach_msg "Screen session of \$LOGNAME \$:cr:\$:nl:ended."
+
+defscrollback 1000
