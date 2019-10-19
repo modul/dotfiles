@@ -19,6 +19,7 @@ main = xmonad myConfig
 
 myConfig = kde5Config {
            modMask = myModMask
+         , terminal = myTerminal
          , manageHook = myManageHook <+> manageHook kde5Config
          , layoutHook = myLayouts
          , focusedBorderColor = litFocusedColor
@@ -26,6 +27,8 @@ myConfig = kde5Config {
          } 
         `additionalKeys` myAdddedKeys myConfig
         `removeKeys` myRemovedKeys
+
+myTerminal = "kitty"
 
 myModMask = mod4Mask
 

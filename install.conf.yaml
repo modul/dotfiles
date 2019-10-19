@@ -12,6 +12,7 @@
     ~/.ghci:
     ~/.gitconfig:
     ~/.gituser:
+    ~/.config/kitty/kitty.conf: kitty.conf
     ~/.screenrc:
     ~/.stack/config.yaml: stack.yaml
     ~/.vimrc:
