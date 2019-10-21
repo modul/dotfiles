@@ -1,23 +1,33 @@
+# This is Git's per-user configuration file.
 [include]
     path = .gituser
-[alias]
-	lg = log --graph \
-		--pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' \
-		--abbrev-commit --date=relative --date-order
-	cv = "!git describe --abbrev=4 HEAD 2>/dev/null > version ; git commit $@ "
-	cm = commit
-	st = status -s
+[alias]	
+	ap = add -p
 	ch = checkout
-	mm = merge --no-ff --log
-    sdiff = diff --cached
-	wdiff = diff --word-diff
-	week = log --date=short --format='%ad %s' --since='1 week ago'
-	day = log --date=short --format='%ad %s' --since='1 day ago'
-[color]
-    ui = auto
-[core]
-    whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
-    pager = less -FXRS
-	excludesfile = /home/mo/.gitignore
-[push]
-	default = simple
+	chb = checkout -b
+	cho = !git fetch && git checkout
+	br = branch
+	brd = branch -d
+	brD = branch -D
+	merged = branch --merged
+	dmerged = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+	st = status --short
+	sh = show
+	cm = commit
+	master = !git checkout master && git pull origin 
+	unstage = reset HEAD
+	discard = checkout --
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	lg = log --graph --decorate
+    lm = ls --merges --first-parent
+    ln = ls --no-merges --first-parent
+	f = "!git ls-files | grep -i"
+	gr = grep -Ii
+	la = "!git config -l | grep alias | cut -c 7-"
+  #version = describe --abbrev=0
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
