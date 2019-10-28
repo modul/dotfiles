@@ -39,6 +39,7 @@ myLayouts = smartBorders $ avoidStruts $ tall ||| wide ||| Full ||| Grid
 myManageHook = composeAll
     [ className =? "plasmashell" --> doFloat
     , className =? "krunner" --> doFloat
+    , className =? "qjackctl" --> doFloat
     , isFullscreen --> doFullFloat
     , isDialog --> doCenterFloat
     ]
