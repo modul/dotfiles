@@ -1,10 +1,10 @@
 image: alpine:latest
 
 test:
-    only:
-        changes:
-            - install.conf.yaml
-            - .gitlab-ci.yml
+    # only:
+        # changes:
+            # - install.conf.yaml
+            # - .gitlab-ci.yml
     script: 
         - apk update
         - apk add git python3 tree bash
