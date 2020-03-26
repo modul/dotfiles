@@ -55,6 +55,7 @@ myAdddedKeys conf@XConfig{..} = [
                 -- resizing
                     , ((modMask, xK_s),               sendMessage Shrink)
                     , ((modMask, xK_t),               sendMessage Expand)
+                    , ((modMask, xK_f),               withFocused $ windows . W.sink)
                 -- refreshing windows
                     , ((modMask .|. shiftMask, xK_r), refresh)
                     ]
