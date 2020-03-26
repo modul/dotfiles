@@ -32,7 +32,7 @@ myTerminal = "kitty"
 
 myModMask = mod4Mask
 
-myLayouts = smartBorders $ avoidStruts $ tall ||| wide ||| Full ||| Grid
+myLayouts = smartBorders $ avoidStruts $ tall ||| wide ||| Full 
     where tall = Tall 1 (2/100) (1/2)
           wide = Mirror tall
 
