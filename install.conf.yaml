@@ -17,3 +17,14 @@
     ~/.stack/config.yaml: stack.yaml
     ~/.vimrc:
     ~/.xmonad/xmonad.hs: xmonad.hs
+
+- shell:
+    - command: git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+      description: Getting Vundle
+      stdout: true
+      stderr: true
+    - command: updateVim
+      description: Installing VIM Bundles
+      stdout: true
+      stderr: true
+
