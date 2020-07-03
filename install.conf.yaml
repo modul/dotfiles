@@ -23,7 +23,7 @@
       description: Getting Vundle
       stdout: true
       stderr: true
-    - command: updateVim
+    - command: vim +BundleInstall! +BundleClean +qall
       description: Installing VIM Bundles
       stdout: true
       stderr: true
