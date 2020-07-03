@@ -13,6 +13,9 @@
 	wdiff = diff --word-diff
 	week = log --date=short --format='%ad %s' --since='1 week ago'
 	day = log --date=short --format='%ad %s' --since='1 day ago'
+    lm = lg --merges --first-parent
+    unstage = reset
+    discard = ch --
 [color]
     ui = auto
 [core]
