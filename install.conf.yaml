@@ -23,7 +23,7 @@
       description: Getting Vundle
       stdout: true
       stderr: true
-    - command: vim +BundleInstall! +BundleClean +qall
+    - command: echo -e '\n\n\n' | vim -c 'BundleInstall!' -c 'BundleClean' -c 'qall' /dev/stdin | cat
       description: Installing VIM Bundles
       stdout: true
       stderr: true
