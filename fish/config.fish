@@ -1,1 +1,6 @@
-test -s /Users/gir/.nvm-fish/nvm.fish; and source /Users/gir/.nvm-fish/nvm.fish
+function nvm
+   bass source (brew --prefix nvm)/nvm.sh --no-use ';' nvm $argv
+end
+
+set -x NVM_DIR ~/.nvm
+nvm use default --silent
