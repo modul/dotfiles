@@ -3,7 +3,7 @@
 " 
 syntax on
 set nocompatible
-set ts=4 sts=4 sw=4 sr
+set ts=2 sts=2 sw=2 sr
 set autoindent expandtab 
 set incsearch nowrap nu modeline autoread
 set guioptions=agi

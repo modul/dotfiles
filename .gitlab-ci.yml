@@ -7,6 +7,6 @@ test:
             # - .gitlab-ci.yml
     script: 
         - apk update
-        - apk add git python3 tree bash
+        - apk add git python3 tree bash vim
         - ./install
 
