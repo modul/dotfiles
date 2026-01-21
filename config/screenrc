@@ -1,6 +1,7 @@
 defutf8 on
 utf8 on on
 term screen-256color
+termcapinfo xterm* ti@:te@
 
 # window caption and status line
 hardstatus alwayslastline "%{ck} %n%f %t %{w}| %?%-Lw%?%{m}%n*%f %t%?(%u)%?%{w}%?%+Lw%? %{+d w}%=(%l) %-21=%{wk}%D %d.%m.%Y %0c"

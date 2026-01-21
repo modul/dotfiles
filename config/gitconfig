@@ -1,21 +1,31 @@
 [include]
     path = .gituser
+
 [alias]
 	lg = log --graph \
 		--pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' \
 		--abbrev-commit --date=relative --date-order
+	lm = lg --merges --first-parent
+	ls = "diff-tree --no-commit-id --name-only -r"
 	cv = "!git describe --abbrev=4 HEAD 2>/dev/null > version ; git commit $@ "
 	cm = commit
 	st = status -s
 	ch = checkout
+	cp = cherry-pick
 	mm = merge --no-ff --log
-    sdiff = diff --cached
+	sdiff = diff --cached
 	wdiff = diff --word-diff
 	week = log --date=short --format='%ad %s' --since='1 week ago'
 	day = log --date=short --format='%ad %s' --since='1 day ago'
-    lm = lg --merges --first-parent
-    unstage = reset
-    discard = ch --
+	unstage = reset
+	discard = ch --
+
+[branch]
+  sort = -committerdate
+[tag]
+  sort = version:refname
+[column]
+    ui = auto
 [color]
     ui = auto
 [core]
@@ -24,3 +34,16 @@
 	excludesfile = /home/mo/.gitignore
 [push]
 	default = simple
+  autoSetupRemote = true
+[pull]
+	rebase = true
+[diff]
+	algorithm = histogram
+  mnemonicPrefix = true
+  renames = true
+[init]
+	defaultBranch = main
+[help]
+  autocorrect = prompt
+[user]
+	name = get
