@@ -45,5 +45,3 @@
 	defaultBranch = main
 [help]
   autocorrect = prompt
-[user]
-	name = get

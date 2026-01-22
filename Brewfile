@@ -66,3 +66,8 @@ brew "mongosh"
 #cask "reaper"
 # Multimedia player
 #cask "vlc"
+
+### Other useful stuff ##
+# Turn off bluetooth while asleep
+brew "bluesnooze"
+
