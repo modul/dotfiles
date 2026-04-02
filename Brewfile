@@ -17,8 +17,6 @@ brew "screen"
 brew "tldr"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
-# GPU-accelerated terminal emulator
-cask "alacritty"
 # Open-source firewall to block unknown outgoing connections
 cask "lulu"
 # Monitors computer mic and webcam
