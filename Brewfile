@@ -3,6 +3,7 @@ brew "git"
 brew "vim"
 brew "fish"
 cask "font-fira-code"
+cask "karabiner-elements"
 
 # window manager
 brew "asmvik/formulae/yabai"
@@ -55,18 +56,19 @@ brew "mongosh"
 ### For personal use (mostly) ###
 
 # Library for reading RAW files from digital photo cameras
-#brew "libraw"
+# brew "libraw"
 # Perl lib for reading and writing EXIF metadata
-#brew "exiftool"
+# brew "exiftool"
 # Play, record, convert, and stream select audio and video codecs
-#brew "ffmpeg"
+# brew "ffmpeg"
 # Multi-track audio editor and recorder
-#cask "audacity"
+# cask "audacity"
 # Collaboration platform for API development
-#cask "reaper"
+# cask "reaper"
 # Multimedia player
-#cask "vlc"
+# cask "vlc"
 
 ### Other useful stuff ##
 # Turn off bluetooth while asleep
-brew "bluesnooze"
+cask "bluesnooze"
+
