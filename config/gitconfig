@@ -19,6 +19,7 @@
 	day = log --date=short --format='%ad %s' --since='1 day ago'
 	unstage = reset
 	discard = ch --
+  agentlog = shortlog --group=trailer:co-authored-by
 
 [branch]
   sort = -committerdate

@@ -4,6 +4,8 @@ brew "vim"
 brew "fish"
 cask "font-fira-code"
 
+# window manager
+brew "asmvik/formulae/yabai"
 
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
@@ -68,4 +70,3 @@ brew "mongosh"
 ### Other useful stuff ##
 # Turn off bluetooth while asleep
 brew "bluesnooze"
-

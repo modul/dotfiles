@@ -4,6 +4,7 @@ echo "### creating symlinks ###"
 ln -svi $(pwd)/config/vimrc ~/.vimrc
 ln -svi $(pwd)/config/screenrc ~/.screenrc
 ln -svi $(pwd)/config/gitconfig ~/.gitconfig
+ln -svi $(pwd)/config/yabairc ~/.yabairc
 cp -iv config/gituser ~/.gituser
 echo
 echo
