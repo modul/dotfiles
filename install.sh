@@ -1,5 +1,10 @@
 #!/bin/bash -i
 
+echo "### creating directories ###"
+mkdir -pv ~/.vim/undodir
+echo
+echo
+
 echo "### creating symlinks ###"
 ln -svi $(pwd)/config/vimrc ~/.vimrc
 ln -svi $(pwd)/config/screenrc ~/.screenrc

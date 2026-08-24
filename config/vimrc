@@ -9,7 +9,7 @@ set incsearch nowrap nu modeline autoread
 set guioptions=agi
 set spelllang=de
 set undofile
-set undodir=~/.vimundo
+set undodir=~/.vim/undodir
 set mouse=a
 set hidden " required for CtrlSpace
 set re=2
