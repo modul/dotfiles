@@ -3,8 +3,8 @@
 mkdir -p ~/.config
 mkdir -p ~/.config/fish
 ln -svi $(pwd)/config/fish/config.fish ~/.config/fish/config.fish
-ln -svi $(pwd)/config/fish/fish_variables ~/.config/fish/fish_variables
 ln -svi $(pwd)/config/fish/functions ~/.config/fish/functions
+touch ~/.config/fish/fish_variables
 
 curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source
 fisher install jorgebucaran/fisher
