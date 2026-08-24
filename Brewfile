@@ -14,8 +14,8 @@ brew "go"
 brew "bat"
 # Perl-powered file rename script with many helpful built-ins
 brew "rename"
-# Terminal multiplexer with VT100/ANSI terminal emulation
-brew "screen"
+# Terminal multiplexer
+brew "tmux"
 # Simplified and community-driven man pages
 brew "tldr"
 # Executes a program periodically, showing output fullscreen
